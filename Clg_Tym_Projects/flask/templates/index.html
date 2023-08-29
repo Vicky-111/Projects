@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        {% for short_url, original_url in url_mapping %}
+            <div class="url-container">
+                <p class="original-url"><strong><u>Original URL</u>:</strong></p>
+                <p class="link_original_url">{{ original_url }}</p>
+                <p class="shortened-url"><strong><u>Shortened URL</u>:</strong></p>
+                <p><a href="{{ short_url }}">{{ short_url }}</a></p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

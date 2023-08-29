@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <form action="/shorten" method="POST">
+        <label for="url">Enter a URL:</label>
+        <input type="text" id="url" name="url">
+        <label for="custom_name">Custom name (optional):</label>
+        <input type="text" id="custom_name" name="custom_name">
+        <button type="submit">Shorten the link</button>
+    </form>
+
+    
+    {% block content %}{% endblock %}
+
+</body>
+</html>
+  
