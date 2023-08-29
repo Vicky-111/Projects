@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="cotainer">
+        <div class="url-container1">
+            <form action="/shorten" method="post">
+                <label for="url">Enter the URL:</label>
+                <input type="text" name="url" id="url">
+              
+                <label for="expiration">Expiration Date:</label>
+                <input type="datetime-local" name="expiration" id="expiration">
+                <br>
+                <label for="custom_name">Custom Name (optional):</label>
+                <input type="text" name="custom_name" id="custom_name">
+                <br>
+                <button type="submit">Shorten the link</button>
+            </form>
+        </div>
+    </div>
+    <div class="contain">
+        {% if url_mapping %}
+            <div class="url-container2">
+                <p class="original-url"><strong><u>Original URL</u>:</strong></p>
+                <u><p class="link_original_url">{{ url_mapping.original_url }}</u></p>
+                <p class="shortened-url"><strong><u>Shortened URL</u>:</strong></p>
+                <p><u><a href="{{ url_mapping.short_url }}">{{ url_mapping.short_url }}</a></u></p>
+                <p class="expiration-timestamp"><strong><u>Expiration Timestamp</u>:</strong></p>
+                <p>{{ url_mapping.expiration_timestamp }}</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

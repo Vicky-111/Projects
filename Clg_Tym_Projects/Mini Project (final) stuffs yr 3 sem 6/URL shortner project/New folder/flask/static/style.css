@@ -1,0 +1,150 @@
+/* style.css */
+
+body {
+    font-family: Lucida Handwriting ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #5250df 10%, #e94dd9 25%,  #9063e9 51%, #37d0c6  100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #35fcffd0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px  rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+
+    padding: 10px 20px;
+    background-color: #94bef0;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  button:hover {
+    background-color: #35ffff;
+  }
+  
+  .container {
+    width: 400px;
+    padding: 20px;
+    background-color: #171d1ed0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px  rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .container p {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+  h2 {
+    font-family: Lucida Handwriting ;
+  position: absolute;
+  color: #343434;
+  text-shadow: 2px 2px 9px  rgb(221, 213, 213);
+  top: 100px; /* Adjust the top position value as needed */
+  left: 150px; /* Adjust the left position value as needed */
+  }
+  .original-url {
+    font-weight: bold;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .link_original_url {
+    color: #131313;
+    word-wrap: break-word;
+  
+  }
+  .shortened-url {
+    font-weight: bold;
+    
+   
+  }
+  
+  .url-container1 {
+
+    margin-bottom: 0px;
+  }
+  .url-container2 {
+    margin-bottom: 0px;
+  }
+  .contain{
+    
+    width: 500px;
+    padding: 20px;
+    background-color: #35fcffd0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px  rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  
+
+
+
+
+
+
+  
